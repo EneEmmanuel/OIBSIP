@@ -1,22 +1,29 @@
-# Task 3: Password Generator
+# Password Generator - OIBSIP Task 3
+# Author: Ene Emmanuel
 
-A simple Password Generator built with Python.
+import random
+import string
 
-## Features
-- User chooses password length
-- User chooses to include letters, numbers, symbols
-- Generates a strong random password
+print("--- PASSWORD GENERATOR ---")
 
-## How to Run
-1. Make sure Python is installed
-2. Run this command:
-python password_generator.py
+length = int(input("Enter password length: "))
 
-## How it Works
-- User enters length
-- User selects character types
-- Program randomly picks characters to build password
+print("\nChoose what to include:")
+use_letters = input("Include letters? (y/n): ").lower() == 'y'
+use_numbers = input("Include numbers? (y/n): ").lower() == 'y'
+use_symbols = input("Include symbols? (y/n): ").lower() == 'y'
 
-## Author
-Ene Emmanuel
-OIBSIP Python Programming Internship
+characters = ""
+if use_letters:
+    characters += string.ascii_letters
+if use_numbers:
+    characters += string.digits
+if use_symbols:
+    characters += string.punctuation
+
+if characters == "":
+    print("You must select at least one type!")
+else:
+    password = "".join(random.choice(characters) for _ in range(length))
+    print(f"\nYour Generated Password is: {password}")
+    print("\nThank you for using Password Generator!")
