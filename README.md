@@ -1,30 +1,20 @@
-# 📝 OIBSIP - Task 1: To-Do List App
+# Task 2: BMI Calculator
 
-## Internship: Oasis Infobyte (OIBSIP)
-## Track: Python Programming
-## Task: Level 1 - Task 1 - To-Do App
+A simple BMI (Body Mass Index) Calculator built with Python.
 
-### About This Project
-A simple console-based To-Do List App that allows users to manage daily tasks.
+## Features
+- Takes weight in kg and height in meters
+- Calculates BMI
+- Shows category: Underweight, Normal, Overweight, Obese
 
-### Features
-- 1. Add Task
-- 2. View Tasks
-- 3. Delete Task
-- 4. Exit
+## How to Run
+1. Make sure Python is installed
+2. Run this command:
+python bmi.py
 
-### How To Run
-1. Download todo.py
-2. Open in VS Code
-3. Press F5 to run
-4. Follow menu 1-4
+## How it Works
+BMI = weight / (height x height)
 
-### What I Learned
-- Python Lists
-- append() to add, pop() to delete
-- for loop with enumerate() to display tasks
-- while True loop and break for menu
-- Difference between task and tasks
-
-### Author
-Ene Emmanuel - OIBSIP Intern
+## Author
+Ene Emmanuel
+OIBSIP Python Programming Internship
